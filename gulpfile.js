@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var watchify = require('watchify');
 var source = require('vinyl-source-stream');
 var livereload = require('gulp-livereload');
+var notify = require('gulp-notify');
 
 gulp.task('clean-scripts', function (cb) {
     return gulp.src('js', {read: false})
@@ -26,14 +27,16 @@ gulp.task('clean', ['clean-scripts', 'clean-styles', 'clean-browserify']);
 gulp.task('scripts', function () {
     return gulp.src('src/jsx/**/*.jsx')
         .pipe(react())
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('js'))
+        .pipe(notify('JSX compiled'));
 });
 
 gulp.task('styles', function () {
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('css'))
-        .pipe(livereload({auto: false}));
+        .pipe(livereload({auto: false}))
+        .pipe(notify('Sass compiled'));
 });
 
 gulp.task('browserify', ['scripts'], function () {
@@ -44,7 +47,8 @@ gulp.task('browserify', ['scripts'], function () {
         return bundler.bundle()
         .pipe(source('frontend.js'))
         .pipe(gulp.dest('build'))
-        .pipe(livereload({auto: false})); // not working for some reason
+        .pipe(livereload({auto: false})) // not working for some reason
+        .pipe(notify('Browserified'));
     };
 
     return rebundle();
