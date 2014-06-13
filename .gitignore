@@ -2,4 +2,4 @@
 /build
 /js
 /css
-.swp
+*.swp

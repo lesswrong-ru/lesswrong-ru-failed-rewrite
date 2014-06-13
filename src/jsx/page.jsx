@@ -3,6 +3,7 @@ var React = require('react');
 var TopHeader = require('./top/header');
 var TopMenu = require('./top/menu');
 var NewsContainer = require('./news/container');
+var ContentContainer = require('./content/container');
 
 var TODO = React.createClass({
     render: function () {
@@ -20,7 +21,7 @@ var Page = React.createClass({
             content = <NewsContainer />;
         }
         else if (this.props.tab == "content") {
-            content = <TODO />;
+            content = <ContentContainer />;
         }
         else if (this.props.tab == "community") {
             content = <TODO />;

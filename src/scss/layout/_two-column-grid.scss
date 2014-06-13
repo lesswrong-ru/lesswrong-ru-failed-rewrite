@@ -1,0 +1,23 @@
+.two-column-grid {
+    max-width: $page-width - 200px;
+    @include clearfix;
+    margin: 0 auto;
+}
+
+.two-column-grid__row {
+    margin-bottom: 30px;
+}
+
+@include responsive(D) {
+    .two-column-grid__row {
+        @include clearfix;
+        margin-bottom: 30px;
+    }
+
+    .two-column-grid__item--left {
+        float: left;
+    }
+    .two-column-grid__item--right {
+        float: right;
+    }
+}
