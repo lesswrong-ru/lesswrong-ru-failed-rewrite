@@ -5,3 +5,18 @@
         clear: both;
     }
 }
+
+// M = mobile
+// T = tablet
+// D = desktop
+@mixin responsive($point) {
+    @if $point == D {
+        @media (min-width: 980px) { @content; }
+    }
+    @else if $point == T {
+        @media (min-width: 481px) and (max-width: 979px) { @content; }
+    }
+    @else if $point == M {
+        @media (max-width: 480px)  { @content; }
+    }
+}

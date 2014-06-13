@@ -1,13 +1,17 @@
 .column-with-sidebar {
     margin: 0 auto;
     max-width: $page-width;
+    position: relative;
 }
 
-.column-with-sidebar__sidebar {
-    float: left;
-    width: 250px;
-}
+@include responsive(D) {
+    .column-with-sidebar__sidebar {
+        position: absolute;
+        left: 0;
+    }
 
-.column-with-sidebar__main {
-    margin-left: 250px;
+    .column-with-sidebar__main {
+        margin-left: 250px;
+        max-width: 400px;
+    }
 }

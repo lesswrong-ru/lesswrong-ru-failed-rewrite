@@ -27,12 +27,14 @@ NewsFeedItem = React.createClass({
         return (
             <article className="news-item">
                 <div className="news-item__body">
-                    Hello3
+                    {this.props.body}
                 </div>
                 <footer className="news-item__footer">
-                    <span className="news-item__timestamp">
-                        <Timestamp ts={this.props.ts} />
-                    </span>
+                    <a href={"/user/" + this.props.author}>
+                        {this.props.author}
+                    </a>
+                    {', '}
+                    <Timestamp ts={this.props.ts} />
                 </footer>
             </article>
         );
@@ -43,8 +45,8 @@ NewsFeed = React.createClass({
     render: function () {
         return (
             <div className="news-feed">
-                <NewsFeedItem />
-                <NewsFeedItem />
+                <NewsFeedItem body="Когда-нибудь тут будет лента новостей." author="berekuk" />
+                <NewsFeedItem body="А может быть и нет." author="berekuk" />
             </div>
         );
     }
