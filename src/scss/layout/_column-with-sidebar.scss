@@ -1,0 +1,13 @@
+.column-with-sidebar {
+    margin: 0 auto;
+    max-width: $page-width;
+}
+
+.column-with-sidebar__sidebar {
+    float: left;
+    width: 250px;
+}
+
+.column-with-sidebar__main {
+    margin-left: 250px;
+}

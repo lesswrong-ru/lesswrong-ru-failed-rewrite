@@ -1,0 +1,12 @@
+.news-item {
+    margin-bottom: 10px;
+}
+
+.news-item__footer {
+    @include clearfix;
+}
+
+.news-item__timestamp {
+    float: right;
+    font-size: $fs-small;
+}

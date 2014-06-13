@@ -1,0 +1,33 @@
+{
+  "name": "lesswrong-ru",
+  "version": "0.0.1",
+  "description": "LessWrong.ru frontend code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berekuk/lesswrong-ru"
+  },
+  "dependencies": {
+    "envify": "^1.2.1",
+    "express": "^4.4.3",
+    "moment": "^2.7.0",
+    "react": "^0.10.0"
+  },
+  "devDependencies": {
+    "browserify": "^4.1.10",
+    "gulp": "^3.8.0",
+    "gulp-clean": "^0.3.0",
+    "gulp-livereload": "^2.1.0",
+    "gulp-react": "^0.3.3",
+    "gulp-sass": "^0.7.2",
+    "http-server": "^0.6.1",
+    "rimraf": "^2.2.8",
+    "run-sequence": "^0.3.6",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^0.10.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vyacheslav Matyukhin <me@berekuk.ru>",
+  "license": "ISC"
+}

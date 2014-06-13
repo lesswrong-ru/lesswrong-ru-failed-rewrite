@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'vars';
+
+@import 'mixins';
+
+* {
+    font-family: sans-serif;
+}
+
+@import 'layout/column-with-sidebar';
+
+@import 'top/header';
+@import 'top/menu';
+@import 'news/container';
