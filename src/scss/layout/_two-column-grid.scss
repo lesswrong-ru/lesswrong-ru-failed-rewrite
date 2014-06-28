@@ -1,11 +1,13 @@
 .two-column-grid {
-    max-width: $page-width - 200px;
+    max-width: $page-width;
     @include clearfix;
     margin: 0 auto;
 }
 
 .two-column-grid__row {
     margin-bottom: 30px;
+    margin: 0 auto;
+    max-width: 750px;
 }
 
 @include responsive(D) {

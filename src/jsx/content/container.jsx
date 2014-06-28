@@ -2,16 +2,27 @@ var React = require('react');
 
 var Layout = require('../layout/two-column-grid');
 var Card = require('./card');
+var CardCommon = require('./card-common');
 
 module.exports = React.createClass({
     render: function () {
         return (
             <Layout>
-                <Card>hello1</Card>
-                <Card>hello2</Card>
-                <Card>hello3</Card>
-                <Card>hello4</Card>
-                <Card>hello5</Card>
+                <Card>
+                    <CardCommon title="Цепочки" id="sequences">
+                        привет
+                    </CardCommon>
+                </Card>
+                <Card>
+                    <CardCommon title="Наши тексты" id="local">
+                        единороги, василиски, extended mind
+                    </CardCommon>
+                </Card>
+                <Card>
+                    <CardCommon title="Видео со встреч" id="meetup-video">
+                        embed-ы с youtube
+                    </CardCommon>
+                </Card>
             </Layout>
         );
     }
