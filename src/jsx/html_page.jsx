@@ -15,9 +15,8 @@ module.exports = React.createClass({
                 </head>
                 <body>
                     <main>
-                        <Page tab={this.props.tab} />
+                        <Page ref="page" tab={this.props.tab} />
                     </main>
-                    <script src="build/frontend.js"></script>
                 </body>
             </html>
         );

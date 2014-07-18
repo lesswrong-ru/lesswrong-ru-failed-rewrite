@@ -9,11 +9,14 @@
   "dependencies": {
     "envify": "^1.2.1",
     "express": "^4.4.3",
+    "fibers": "^1.0.1",
     "moment": "^2.7.0",
-    "react": "^0.10.0"
+    "q": "^1.0.1",
+    "react": "^0.10.0",
+    "react-async": "^0.9.4",
+    "superagent": "^0.18.0"
   },
   "devDependencies": {
-    "browserify": "^4.1.10",
     "gulp": "^3.8.0",
     "gulp-clean": "^0.3.0",
     "gulp-livereload": "^2.1.0",
@@ -21,10 +24,8 @@
     "gulp-react": "^0.3.3",
     "gulp-sass": "^0.7.2",
     "http-server": "^0.6.1",
-    "rimraf": "^2.2.8",
     "run-sequence": "^0.3.6",
-    "vinyl-source-stream": "^0.1.1",
-    "watchify": "^0.10.2"
+    "webpack": "^1.3.2-beta2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

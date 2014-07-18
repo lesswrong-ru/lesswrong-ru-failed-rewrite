@@ -17,6 +17,7 @@ var Page = React.createClass({
     },
     render: function () {
         var content;
+        console.log(this.props.tab);
         if (this.props.tab == "news") {
             content = <NewsContainer />;
         }
