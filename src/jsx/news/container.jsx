@@ -24,7 +24,6 @@ module.exports = React.createClass({
 
     render: function () {
         var sidebar = <NewsSidebar />;
-        console.log(this.state.news);
         return (
             <Layout sidebar={sidebar}>
                 <NewsFeed news={this.state.news} />

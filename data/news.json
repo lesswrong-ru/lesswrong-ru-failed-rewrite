@@ -1,10 +1,12 @@
 [
     {
         "body": "Когда-нибудь тут будет лента новостей!",
-        "author": "berekuk"
+        "author": "berekuk",
+        "ts": 1405727539
     },
     {
         "body": "А может быть и нет.",
-        "author": "berekuk"
+        "author": "berekuk",
+        "ts": 1405727000
     }
 ]

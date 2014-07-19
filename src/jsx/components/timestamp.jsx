@@ -9,7 +9,7 @@ module.exports = React.createClass({
     render: function () {
         return (
             <span>
-                {moment(this.props.ts).fromNow()}
+                {moment.unix(this.props.ts).fromNow()}
             </span>
         );
     }

@@ -10,7 +10,7 @@ module.exports = React.createClass({
         var items = this.props.news.map(function (item) {
             i++;
             return (
-                <NewsFeedItem body={item.body} author={item.author} key={i} />
+                <NewsFeedItem body={item.body} author={item.author} ts={item.ts} key={i} />
             );
         });
         return (
