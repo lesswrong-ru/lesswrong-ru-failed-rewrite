@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var clean = require('gulp-clean');
+var changed = require('gulp-changed');
 var react = require('gulp-react');
 var sass = require('gulp-sass');
 var livereload = require('gulp-livereload');
@@ -22,6 +23,7 @@ gulp.task('clean', [
 
 gulp.task('scripts', function () {
     return gulp.src('src/jsx/**/*.jsx')
+        .pipe(changed('js', {extension: '.js'}))
         .pipe(react())
         .pipe(gulp.dest('js'))
         .pipe(notify('JSX compiled'));
